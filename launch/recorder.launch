@@ -1,0 +1,23 @@
+<launch>
+
+<!-- start mocap -->
+<arg name="mocap_config_file" default="$(find simple_recorder)/config/mocap.yaml" />
+<node pkg="mocap_optitrack"
+    type="mocap_node"
+    name="mocap_node"
+    respawn="false"
+    launch-prefix=""
+    required="true">
+<rosparam file="$(arg mocap_config_file)" command="load"/>
+</node>
+
+<!-- start kinect -->
+<include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch"/>
+
+<!-- set test parameters (to be given on launch) -->
+<param name="/Recorder/base_path" value="$(find simple_recorder)/log/12_TableTowerPen_Incoming_5/"/>
+
+<!-- start recorder -->
+<node name="recorder" pkg="simple_recorder" type="recorder.py" args="" respawn="true" output="screen"/>
+
+</launch>

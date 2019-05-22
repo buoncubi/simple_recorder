@@ -1,0 +1,85 @@
+#
+# Definition of all trackable objects
+# Identifier corresponds to Trackable ID set in Tracking Tools
+#
+rigid_bodies:
+    '1':
+        pose: Rigid_Body/Table/pose
+        pose2d: Rigid_Body/Table/ground_pose
+        child_frame_id: Rigid_Body/Table/base_link
+        parent_frame_id: world
+        use_new_coordinates: false
+    '2':
+        pose: Rigid_Body/Leg_1/pose
+        pose2d: LRigid_Body/eg_1/ground_pose
+        child_frame_id: Leg_1/base_link
+        parent_frame_id: world
+        use_new_coordinates: false
+    '3':
+        pose: Rigid_Body/Leg_2/pose
+        pose2d: Rigid_Body/Leg_2/ground_pose
+        child_frame_id: Rigid_Body/Leg_2/base_link
+        parent_frame_id: world
+        use_new_coordinates: false        
+    '4':
+        pose: Rigid_Body/Leg_3/pose
+        pose2d: Rigid_Body/Leg_3/ground_pose
+        child_frame_id: Rigid_Body/Leg_3/base_link
+        parent_frame_id: world
+        use_new_coordinates: false        
+    '5':
+        pose: Rigid_Body/Leg_4/pose
+        pose2d: Rigid_Body/Leg_4/ground_pose
+        child_frame_id: Rigid_Body/Leg_4/base_link
+        parent_frame_id: world
+        use_new_coordinates: false        
+    '6':
+        pose: Rigid_Body/Container_1/pose
+        pose2d: Rigid_Body/Container_1/ground_pose
+        child_frame_id: Rigid_Body/Container_1/base_link
+        parent_frame_id: world
+        use_new_coordinates: false 
+    '7':
+        pose: Rigid_Body/Container_2/pose
+        pose2d: Rigid_Body/Container_2/ground_pose
+        child_frame_id: Rigid_Body/Container_2/base_link
+        parent_frame_id: world
+        use_new_coordinates: false                
+    '8':
+        pose: Rigid_Body/Container_3/pose
+        pose2d: Rigid_Body/Container_3/ground_pose
+        child_frame_id: Rigid_Body/Container_3/base_link
+        parent_frame_id: world
+        use_new_coordinates: false
+    '9':
+        pose: Rigid_Body/Container_4/pose
+        pose2d: Rigid_Body/Container_4/ground_pose
+        child_frame_id: Rigid_Body/Container_4/base_link
+        parent_frame_id: world
+        use_new_coordinates: false        
+    '10':
+        pose: Rigid_Body/Container_5/pose
+        pose2d: Rigid_Body/Container_5/ground_pose
+        child_frame_id: Rigid_Body/Container_5/base_link
+        parent_frame_id: world
+        use_new_coordinates: false                
+    '11':
+        pose: Rigid_Body/Pen_1/pose
+        pose2d: Rigid_Body/Pen_1/ground_pose
+        child_frame_id: Rigid_Body/Pen_1/base_link
+        parent_frame_id: world
+        use_new_coordinates: false 
+    '12':
+        pose: Rigid_Body/Pen_2/pose
+        pose2d: Rigid_Body/Pen_2/ground_pose
+        child_frame_id: Rigid_Body/Pen_2/base_link
+        parent_frame_id: world
+        use_new_coordinates: false 
+    '13':
+        pose: Rigid_Body/Pen_3/pose
+        pose2d: Rigid_Body/Pen_3/ground_pose
+        child_frame_id: Rigid_Body/Pen_3/base_link
+        parent_frame_id: world
+        use_new_coordinates: false 
+optitrack_config:
+        multicast_address: 239.255.42.99 #224.0.0.1
